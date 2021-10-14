@@ -6,7 +6,7 @@ net = cv2.dnn.readNet('models/vehicle_0202/vehicle-detection-0202.bin',
                       'models/vehicle_0202/vehicle-detection-0202.xml')
 # net.setPreferableBackend(cv2.DNN_BACKEND_INFERENCE_ENGINE)
 my_tracker = Tracker()
-cap = cv2.VideoCapture('rtsp://admin:parol12345@192.168.4.220:554/cam/realmonitor?channel=1&subtype=1')
+cap = cv2.VideoCapture(0)
 # cv2.namedWindow('frame', cv2.WINDOW_GUI_EXPANDED)
 cars = []
 counter = 0
